@@ -89,6 +89,7 @@ main {
     text-align: center;
     font-weight: 700;
     font-size: 35px;
+    margin-top: 130px;
     margin-bottom: 50px;
 }
 
@@ -122,6 +123,12 @@ main {
     margin-top: 130px;
 }
 
+.skills-container {
+    display: flex;
+    gap: 24px;
+    /* gap is used after display flex */
+}
+
 .skill {
     background: #FFFFFF;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
@@ -129,14 +136,7 @@ main {
     padding: 30px
 }
 
-.skills-container {
-    display: flex;
-    gap: 24px;
-    /* gap is used after display flex */
-}
-
 .skill-title {
-    text-align: center;
     font-weight: 700;
     font-size: 20px;
     margin-top: 30px;
@@ -176,4 +176,30 @@ main {
 .resume-item{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.resume-button{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Contct style */
+
+.contact{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+
+.contact .section-title{
+    text-align: left;
+}
+
+.contact input[type="text"], input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0 ;
+    width: 100%;
+    /* Takes the whole width of  the div section*/
+    padding: 18px 30px;
 }
