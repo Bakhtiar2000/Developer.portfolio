@@ -3,9 +3,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.header{
+/* Header section */
+.header {
     background: #FFF8F3;
+    background-image: url('../Images/header_bg.png'), url('../Images/developer.png');
+    /* ../ used because the bg picture is  not in the same folder as portfolio.css. So we had to go to the previous folder */
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    /* Here the first picture is on the bottom right position and the second one is in the left position */
 }
+
 .nav-title {
     font-weight: 800;
     font-size: 45px;
@@ -42,6 +49,7 @@ nav li {
     display: flex;
     margin: 0 200px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .banner-title {
@@ -60,4 +68,49 @@ nav li {
     font-size: 18px;
     color: #757575;
     margin-bottom: 30px;
+}
+
+/* Main section */
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.about {
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 150px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* About part */
+.about-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-info {}
+
+.info-title {
+    font-size: 20px;
+}
+
+.info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
 }
